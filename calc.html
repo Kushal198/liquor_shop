@@ -16,7 +16,7 @@
         <div class="links" id="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="calc.html">Alcohol-Calculator</a>
+        <a href="calc.html">Alcohol Calculator</a>
         <a href="contact.html">Contact</a>
         
         </div>
@@ -30,7 +30,7 @@
     <div class="title-breadcrumbs">
        <div class="title-breadcrumbs-container">
           <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
-            <a href="/" class="breadcrumb-home" title="Home">Home /</a><span> About</span>
+            <a href="/" class="breadcrumb-home" title="Home">Home /</a><span> Alcohol-Calculator</span>
           </nav>
        </div>
     </div>
@@ -38,27 +38,43 @@
 
 
 <section>
-   
-        <div class="container-about">
-            <div class="aboutus">
-                <h2>The standard Lorem Ipsum passage</h2>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan turpis posuere cursus ultricies. Ut nunc justo, faucibus eget elit quis, vehicula rhoncus nulla. Phasellus convallis sem nec facilisis commodo. Fusce ut molestie turpis. Suspendisse aliquet sed massa in vulputate. Quisque gravida suscipit tincidunt.</div>
-            </div>
-            <div class="aboutus">
-                <h2>At vero eos et accusamus et iusto odio dignissimos</h2>
-                <div class="desc">Mauris elementum scelerisque elit non egestas. Cras lacus nibh, pretium quis bibendum nec, dapibus a metus. Morbi eros lectus, aliquam eu aliquam id, fringilla nec eros. Praesent suscipit commodo diam, non viverra turpis dapibus malesuada. Duis cursus metus eu sem eleifend, id rhoncus odio porttitor.
-                </div>
-            </div>
-            <div class="aboutus">
-                <h2>Certain circumstances and owing to the claims of duty or the obligations</h2>
-                <div class="desc">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes.</div>
-            </div>
-            <div class="aboutus">
-                <h2>Integer ultrices laoreet nunc in gravida</h2>
-                <div class="desc">Sed lobortis pulvinar viverra. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris suscipit dolor scelerisque, bibendum tellus ac, pharetra sapien. Praesent lacinia scelerisque odio et consequat. In a facilisis lacus. Maecenas vel lobortis tellus.</div>
-            </div>
+  <!-- <div>
+    <form action="" style="column-gap: 4rem;">
+        <div>
+          <label for="size">Size</label>
+         
+        </div> -->
+
+        <!-- <div> 
+          <label for="volume">Alcohol Volume</label>
+          <input id="volume" type="number" class="box" placeholder="Volume in ml">
+        </div>
+       
+        <div> 
+          <label for="volume">Alcohol Percentage (%)</label>
+          <input id="percentage" type="number" class="box" placeholder="Alcohol Percentage">
         </div>
         
+      <button id="calculate" type="button" class="btn" style="margin-top:10px;">Calculate</button>
+  
+  </form> 
+  </div>  -->
+  <table style="width:100%">
+    <tbody>
+      <tr>
+        <td>
+           Alcohol in ml <input id="volume" type="text" size="5" style="font-size: 16px">
+        </td>
+        <td>
+            Strength (% alcohol): <input id="percentage" type="text" size="5" style="font-size: 16px">
+        </td>
+        <td>
+          <button id="calculate" type="button" class="btn" >Calculate</button>
+        </td>
+    </tr>
+</tbody>
+</table>
+<p style="font-size: 16px; margin-top:10px" id="result"></p>
       
 </section>
    
@@ -120,6 +136,34 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!-- custom js file link  -->
+<script>
+  const input1Element = document.getElementById("volume");
+const input2Element = document.getElementById("percentage");
+const buttonElement = document.getElementById("calculate");
+const element = document.getElementById("result");
+
+element.innerText = "";
+
+buttonElement.addEventListener("click", () => {
+  const input1Value = parseFloat(input1Element.value);
+  const input2Value = parseFloat(input2Element.value);
+
+  // Perform calculations based on selected value and input values
+  // ...
+  if (!input1Value || !input2Value) {
+    alert("Please provide all values");
+    element.innerText = "";
+    return;
+  }
+  let result;
+
+  result = (input1Value / 1000) * input2Value * 0.789;
+
+  element.innerText = `Amount of pure ethanol in ml: ${(result * 14).toFixed(
+    2
+  )} `;
+});
+</script>
 <script src="script.js"></script>
 
 </body>

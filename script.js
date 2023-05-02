@@ -25,3 +25,29 @@ function change() {
   }
 }
 window.addEventListener("scroll", change);
+
+const form = document.getElementById("contact-form");
+const nameField = document.getElementById("name");
+const emailField = document.getElementById("email");
+const messageField = document.getElementById("message");
+
+// Add event listener to the form on submit
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // prevent default form submission behavior
+
+  // Check if name, email, and message fields are filled out
+  if (!nameField.value || !emailField.value || !messageField.value) {
+    alert("Please fill out all fields.");
+    return;
+  }
+
+  // Check if email is in valid format
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(emailField.value)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  // If all validation passes, submit the form
+  form.submit();
+});
