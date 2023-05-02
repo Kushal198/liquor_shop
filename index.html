@@ -10,24 +10,35 @@
 </head>
 <body>
 <div class="header" id="home">
-    <nav id="navbar" class="nav-change">
-        <a href="#home" class="logo">LIQUOR <span style="font-family: 'Times New Roman', Times, serif;">SHOP</span></a>
-        <div class="links" id="nav">
+    <nav id="navbar" >
+        <div class="logo">
+            <a href="index.html" class="logo">LIQUOR <span>SHOP</span></a>
+        </div>
+        <ul class="links" id="nav">
         <a href="index.html">Home</a>
-        <a href="#about.html">About</a>
+        <a href="about.html">About</a>
         <a href="#blog.html">Blog</a>
         <a href="#products.html">Products</a>
-        <a href="#contact.html">Contact</a>
-        <i class='bx bx-shopping-bag' id="cart-icon"></i>
-        </div>
+        <a href="contact.html">Contact</a>
+        <!-- <i class='bx bx-shopping-bag' id="cart-icon"></i> -->
+        </ul>
         <div class="fas fa-bars" id="menu-btn" onclick="openmenu()"></div>
         <div class="fa-solid fa-xmark" id="close" onclick="closemenu()"></div>
     </nav>
-    <div class="content">
-        <h3><span>Good</span> Drink for <span>Good</span> Moments</h3>
-        <h1>Get the <span>best</span> selection of liquors <br> from around the world</h1>
-        <button class="btn" style="color: white;">Shop Now</button>    
-    </div>
+    <div class="slider-content">
+        <div class="slide_left">
+          <h3 class="slide-sub-heading-2 animated" style="color:#000;">
+            Best Wine Collections                   
+          </h3>
+          <h2 class="slide-heading animated" style="color:#000;">
+            The Wine Enjoying Passion              
+          </h2>
+          <div class="slider_inner_block">       
+            <a href="#" class="slide-button animated btn" tabindex="0">Shop Now</a>  
+          </div>
+      
+        </div>
+      </div>
 </div>
 <!--finish of header section-->
 
@@ -36,147 +47,362 @@
     <div class="container">
         <div class="image"></div>
         <div class="about-content">
-            <h1>Desire meets a new Taste</h1>
-            <p>Lorem ipsum dolor, sit amet ca quibusdam quis quaerat iste, pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nulla ad velit, ratione, adipisci dicta ape</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti perferendis ratione natus nobis accusamus voluptas consectetur voluptatum velit? In incidunt iure fuga</p>
-        <!-- <button class="btn">About Us</button> -->
-        <p class="year">
-            <strong class="number" data-number="50">10</strong>
-            <span>Years of Experience In Business</span>
-        </p>
+        <h3>wine testing</h3>
+                
+        <h2 class="title">About our winery wine store</h2>
+            
+        <p >Lorem Ipsum has been the industry s standard dummy text ever the 1500s, when an unknown printer took a galley type and scrambled it to make a type ..</p>
+
+        <div class="store-inner">
+            <img src="img/store-banner-2.webp" itemprop="banner">
+        </div>
+                
         </div>
     </div>
-</section>
+</section> 
 <!--about section end-->
+
+
 
 <!--blog section start-->
 <section class="blog" id="blog">
-    <h1 class="heading">Our<span>Blog</span></h1>
-    <p class="heading-description">Read our blog for more information... </p>
+    <p class="heading-description">From the Blog </p>
+    <h2 class="heading">Latest News</h2>
+    
     <div class="container">
         <div class="post">
             <div class="blog-img">
-                <img src="img/kind-5.jpg" alt="">
+                <img src="img/blog-7_447x.webp" alt="">
                 <span>23 <br> May</span>
             </div>
             <div class="blog-content">
-                <h3> By admin |<span> ABC</span></h3>
-                <h1>Drinks create a unforgetable memories</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora sunt ab sed officia sapiente libero possimus recus</p>
+               
+                <h2>On The Other Hand, We Denounce With Righteous Indignation...</h2>
+                <div class="btn-read-more">
+                    <a href="product.html" class="btn-read">Read More</a>
+                </div>
             </div>
         </div>
         <div class="post">
             <div class="blog-img">
-                <img src="img/kind-6.jpg" alt="">
+                <img src="img/blog-6_447x.webp" alt="">
                 <span>23 <br> May</span>
             </div>
             <div class="blog-content">
-                <h3> By admin |<span> ABC</span></h3>
-                <h1>Drinks create a unforgetable memories</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora sunt ab sed officia sapiente libero possimus recus</p>
+               
+                <h2>
+                    
+                    Section 1.10.32 Of "De Finibus Bonorum Et Malorum",</h2>
+                    <div class="btn-read-more">
+                        <a href="product.html" class="btn-read">Read More</a>
+                    </div>
             </div>
         </div>
         <div class="post">
             <div class="blog-img">
-                <img src="img/kind-6.jpg" alt="">
+                <img src="img/blog-5_447x.webp" alt="">
                 <span>23<br>May</span>
             </div>
             <div class="blog-content">
-                <h3> By admin |<span> ABC</span></h3>
-                <h1>Drinks create a unforgetable memories</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora sunt ab sed officia sapiente libero possimus recus</p>
+                
+                <h2>The Standard Lorem Ipsum Passage, Used Since The 1500s</h2>
+                <div class="btn-read-more">
+                    <a href="product.html" class="btn-read">Read More</a>
+                </div>
             </div>
         </div>
+        
     </div>
 </section>
-<section class="product" id="product">
-    <h1 class="heading">Our <span>Products</span></h1>
-    <div class="container">
-        <div class="product-box">
-                <img src="img/product3.jpg" alt="">
-                <h2 class="product-title">Blue Label</h2>
-                <span class="price">$200</span>
-                <i class="bx bx-shopping-bag add-cart"></i>
+
+<!--products section start-->
+<section class = "products">
+   
+        <div class = "container-product">
+            <h2 class="heading">Our Products</h2>
+            <div class = "product-items">
+                <!-- single product -->
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "img/13_2f12bfb6-6cb6-4c3e-bb16-630a45bd128c_328x.webp" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Arzuaga Rose</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">DeMorgenzon Chenin Blanc Reserve</a>
+                        <p class = "product-price">$ 150.00</p>
+                        <p class = "product-price">$ 133.00</p>
+                    </div>
+
+                    <div class = "off-info">
+                        <h2 class = "sm-title">25% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "img/11_e879a106-4b42-49e9-9d5f-8217edf387e5_328x.webp" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Arzuaga Rose</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">Gallo Family Vineyards Pink Moscato</a>
+                        <p class = "product-price">$ 150.00</p>
+                        <p class = "product-price">$ 133.00</p>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "img/8_6945074b-23c0-4d9a-b312-b82891a3a78b_884x.webp" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Arzuaga Rose</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">Pierre Jaurant French Pinot Noir</a>
+                        <p class = "product-price">$ 150.00</p>
+                        <p class = "product-price">$ 133.00</p>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "img/15_28aa6493-aead-4ac5-8a00-9b902f7ad9d2_328x.webp" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Arzuaga Rose</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">Bunnahabhain Satisha Whisky
+                           </a>
+                        <p class = "product-price">$ 150.00</p>
+                        <p class = "product-price">$ 133.00</p>
+                    </div>
+
+                    <div class = "off-info">
+                        <h2 class = "sm-title">25% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "img/5_d977c5b7-dc55-4089-83bc-6aca797ccb2d_328x.webp" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Arzuaga Rose</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">Fetzer Sundial Chardonnay</a>
+                        <p class = "product-price">$ 150.00</p>
+                        <p class = "product-price">$ 133.00</p>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "img/12_603eb6ae-f943-4744-8373-45b0b69f41bd_328x.webp" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Arzuaga Rose</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">                           Domaine Latour-Giraud "Champs Canet"</a>
+                        <p class = "product-price">$ 150.00</p>
+                        <p class = "product-price">$ 133.00</p>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "img/1_fc0bf2e5-2697-4cda-8bbb-a17dd0fb5054_328x.webp" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Arzuaga Rose</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">Bread And Butter Chardonnay</a>
+                        <p class = "product-price">$ 150.00</p>
+                        <p class = "product-price">$ 133.00</p>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "img/9_54ab0d39-0d50-4932-a634-0204480cf616_328x.webp" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Arzuaga Rose</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">Sensi Pinot Grigio Collezione White Wine</a>
+                        <p class = "product-price">$ 150.00</p>
+                        <p class = "product-price">$ 133.00</p>
+                    </div>
+
+                    <div class = "off-info">
+                        <h2 class = "sm-title">35% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+            </div>
         </div>
-        <div class="product-box">
-            <img src="img/product3.jpg" alt="">
-            <h2 class="product-title">Blue Label</h2>
-            <span class="price">$200</span>
-            <i class="bx bx-shopping-bag add-cart"></i>
-        </div>
-        <div class="product-box">
-            <img src="img/product3.jpg" alt="">
-            <h2 class="product-title">Blue Label</h2>
-            <span class="price">$200</span>
-            <i class="bx bx-shopping-bag add-cart"></i>
-        </div>
-        <div class="product-box">
-            <img src="img/product3.jpg" alt="">
-            <h2 class="product-title">Blue Label</h2>
-            <span class="price">$200</span>
-            <i class="bx bx-shopping-bag add-cart"></i>
-        </div>
-        <div class="product-box">
-        <img src="img/product3.jpg" alt="">
-        <h2 class="product-title">Blue Label</h2>
-        <span class="price">$200</span>
-        <i class="bx bx-shopping-bag add-cart"></i>
-        </div>
-        <div class="product-box">
-            <img src="img/product3.jpg" alt="">
-            <h2 class="product-title">Blue Label</h2>
-            <span class="price">$200</span>
-            <i class="bx bx-shopping-bag add-cart"></i>
-        </div>
-        <div class="product-box">
-            <img src="img/product3.jpg" alt="">
-            <h2 class="product-title">Blue Label</h2>
-            <span class="price">$200</span>
-            <i class="bx bx-shopping-bag add-cart"></i>
-        </div>
-        <div class="product-box">
-            <img src="img/product3.jpg" alt="">
-            <h2 class="product-title">Blue Label</h2>
-            <span class="price">$200</span>
-            <i class="bx bx-shopping-bag add-cart"></i>
-        </div>
-        <div class="btn-box">
-            <a href="product.html" class="btn">View All Products<span class="fa fa-long-arrow-right"></span></a>
-        </div>
-    </div>
+ 
 </section>
-<!--contact section-->
-<section class="contact">
-
-    <form action="">
-
-        <input type="text" class="box" placeholder="name">
-        <input type="email" class="box" placeholder="your email">
-        <input type="password" class="box" placeholder="your password">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-    
-        <input type="submit" class="btn" value="send message">
-    
-    </form>
-    
-    <div class="content">
-    
-        <h3>contact us for latest updates</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum mollitia excepturi hic doloremque laboriosam. Fugiat adipisci provident ullam magni quia?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nam officiis. Nulla nihil quas magnam accusamus.</p>
-        <div class="icons">
-            <i class="fas fa-map-marker-alt"></i> Butwal, Nepal.
-        </div>
-        <div class="icons">
-            <i class="fas fa-globe"></i> www.yourwebsite.com
-        </div>
-        <div class="icons">
-            <i class="fas fa-phone"></i> +977 8387364837
-        </div>
-    
-    </div>
-
-</section>
-<!--end of contact section-->
+<!--products section end-->
 
 <!--footer section-->
 <footer class="footer">
@@ -222,14 +448,13 @@
       	<div class="container">
       		<div class="row">
 	          <div class="col-md-12">
-	            <p class="mb-0" style="color:white;">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Liquor Shop. All rights reserved.</a></p>
+	            <p class="mb-0" >Copyright &copy;<script>document.write(new Date().getFullYear());</script> Liquor Shop. All rights reserved.</a></p>
 	          </div>
 	        </div>
       	</div>
       </div>
 
 </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

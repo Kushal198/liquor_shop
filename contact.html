@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-<div class="header" id="home">
+<div class="header-no-bg" id="home">
     <nav id="navbar" class="nav-change">
         <a href="#home" class="logo">LIQUOR <span style="font-family: 'Times New Roman', Times, serif;">SHOP</span></a>
         <div class="links" id="nav">
@@ -18,19 +18,16 @@
         <a href="#blog.html">Blog</a>
         <a href="#products.html">Products</a>
         <a href="#contact.html">Contact</a>
-        <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        
         </div>
         <div class="fas fa-bars" id="menu-btn" onclick="openmenu()"></div>
         <div class="fa-solid fa-xmark" id="close" onclick="closemenu()"></div>
     </nav>
-        <div class="content">
-            <p class="breadcrumbs mb-0"><span><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Contact Us <i class="fa fa-chevron-right"></i></span></p>
-              <h2 class="mb-0 bread">Contact Us</h2>  
-        </div>
+        
         </div>
  <!-- contact section starts  -->
 
-<section class="contact">
+<!-- <section class="contact">
 
     <form action="">
 
@@ -59,8 +56,56 @@
     
     </div>
 
-</section>
+</section> -->
 <!-- contact section ends -->
+
+
+    <div class="title-breadcrumbs">
+       <div class="title-breadcrumbs-container">
+          <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+<a href="/" class="breadcrumb-home" title="Home">Home /</a><span> Contact</span>
+</nav>
+<!-- <h2 class="breadcrumb_title">Contact</h2> -->
+
+       </div>
+    </div>
+   
+
+<!--contact section-->
+<section class="contact">
+
+    <div>
+        <form action="">
+
+            <input type="text" class="box" placeholder="name">
+            <input type="email" class="box" placeholder="your email">
+            <input type="password" class="box" placeholder="your password">
+            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+        
+            <input type="submit" class="btn" value="send message">
+        
+        </form>
+    </div>
+    
+    
+    <div class="content">
+    
+        <h3>Get In Touch With Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum mollitia excepturi hic doloremque laboriosam. Fugiat adipisci provident ullam magni quia?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nam officiis. Nulla nihil quas magnam accusamus.</p>
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i> Butwal, Nepal.
+        </div>
+        <div class="icons">
+            <i class="fas fa-globe"></i> www.yourwebsite.com
+        </div>
+        <div class="icons">
+            <i class="fas fa-phone"></i> +977 8387364837
+        </div>
+    
+    </div>
+
+</section>
+<!--end of contact section-->
 <!--footer section-->
 <footer class="footer">
     <div class="container">
@@ -105,7 +150,7 @@
       	<div class="container">
       		<div class="row">
 	          <div class="col-md-12">
-	            <p class="mb-0" style="color:white;">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Liquor Shop. All rights reserved.</a></p>
+	            <p class="mb-0" >Copyright &copy;<script>document.write(new Date().getFullYear());</script> Liquor Shop. All rights reserved.</a></p>
 	          </div>
 	        </div>
       	</div>
