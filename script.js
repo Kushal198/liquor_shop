@@ -26,28 +26,34 @@ function change() {
 }
 window.addEventListener("scroll", change);
 
-const form = document.getElementById("contact-form");
-const nameField = document.getElementById("name");
-const emailField = document.getElementById("email");
-const messageField = document.getElementById("message");
+const footerCols = document.querySelectorAll(".footer-col");
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+const iconCaret = document.querySelector(".icon-caret");
 
-// Add event listener to the form on submit
-form.addEventListener("submit", (event) => {
-  event.preventDefault(); // prevent default form submission behavior
-
-  // Check if name, email, and message fields are filled out
-  if (!nameField.value || !emailField.value || !messageField.value) {
-    alert("Please fill out all fields.");
-    return;
+function toggleFooterColContent(footerCol) {
+  const footerColContent = footerCol.querySelector(".accordin-tabs");
+  if (mediaQuery.matches) {
+    if (footerCol.classList.contains("active")) {
+      footerColContent.style.display = "block";
+      // iconCaret.style.transform = "rotate(180deg)";
+    } else {
+      footerColContent.style.display = "none";
+      // iconCaret.style.transform = "rotate(0deg)";
+    }
+  } else {
+    footerColContent.style.display = "block";
   }
+}
 
-  // Check if email is in valid format
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(emailField.value)) {
-    alert("Please enter a valid email address.");
-    return;
-  }
+footerCols.forEach((footerCol) => {
+  toggleFooterColContent(footerCol);
 
-  // If all validation passes, submit the form
-  form.submit();
+  mediaQuery.addEventListener("change", () => {
+    toggleFooterColContent(footerCol);
+  });
+
+  footerCol.addEventListener("click", () => {
+    footerCol.classList.toggle("active");
+    toggleFooterColContent(footerCol);
+  });
 });

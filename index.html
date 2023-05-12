@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 <div class="header" id="home">
@@ -25,7 +27,8 @@
         <div class="fa-solid fa-xmark" id="close" onclick="closemenu()"></div>
     </nav>
     <div class="slider-content">
-        <div class="slide_left">
+        <div class="slide_left" data-aos="fade-right"  data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <h3 class="slide-sub-heading-2 animated" style="color:#000;">
             Best Wine Collections                   
           </h3>
@@ -44,15 +47,19 @@
 <!--about section start-->
 <section class="about" id="about">
     <div class="container">
-        <div class="image"></div>
-        <div class="about-content">
+        <div class="image" data-aos="fade-up"
+        data-aos-anchor-placement="top-center"></div>
+        <div class="about-content" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
         <h3>wine testing</h3>
                 
         <h2 class="title">About our winery wine store</h2>
             
         <p >Lorem Ipsum has been the industry s standard dummy text ever the 1500s, when an unknown printer took a galley type and scrambled it to make a type ..</p>
 
-        <div class="store-inner">
+        <div class="store-inner" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <img src="img/store-banner-2.webp" itemprop="banner">
         </div>
                 
@@ -65,11 +72,14 @@
 
 <!--blog section start-->
 <section class="blog" id="blog">
-    <p class="heading-description">From the Blog </p>
+    <div data-aos="zoom-in">
+        <p class="heading-description" >From the Blog </p>
     <h2 class="heading">Latest News</h2>
+    </div>
+    
     
     <div class="container">
-        <div class="post">
+        <div class="post" data-aos="flip-left">
             <div class="blog-img">
                 <img src="img/blog-7_447x.webp" alt="">
                 <span>23 <br> May</span>
@@ -82,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="post">
+        <div class="post" data-aos="flip-left">
             <div class="blog-img">
                 <img src="img/blog-6_447x.webp" alt="">
                 <span>23 <br> May</span>
@@ -97,7 +107,7 @@
                     </div>
             </div>
         </div>
-        <div class="post">
+        <div class="post" data-aos="flip-left">
             <div class="blog-img">
                 <img src="img/blog-5_447x.webp" alt="">
                 <span>23<br>May</span>
@@ -117,11 +127,12 @@
 <!--products section start-->
 <section class = "products">
    
-        <div class = "container-product">
+        <div class = "container-product" >
             <h2 class="heading">Our Products</h2>
             <div class = "product-items">
                 <!-- single product -->
-                <div class = "product">
+                <div class = "product" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
                     <div class = "product-content">
                         <div class = "product-img">
                             <img src = "img/13_2f12bfb6-6cb6-4c3e-bb16-630a45bd128c_328x.webp" alt = "product image">
@@ -158,7 +169,8 @@
                 </div>
                 <!-- end of single product -->
                 <!-- single product -->
-                <div class = "product">
+                <div class = "product" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
                     <div class = "product-content">
                         <div class = "product-img">
                             <img src = "img/11_e879a106-4b42-49e9-9d5f-8217edf387e5_328x.webp" alt = "product image">
@@ -191,7 +203,8 @@
                 </div>
                 <!-- end of single product -->
                 <!-- single product -->
-                <div class = "product">
+                <div class = "product" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
                     <div class = "product-content">
                         <div class = "product-img">
                             <img src = "img/8_6945074b-23c0-4d9a-b312-b82891a3a78b_884x.webp" alt = "product image">
@@ -224,7 +237,8 @@
                 </div>
                 <!-- end of single product -->
                 <!-- single product -->
-                <div class = "product">
+                <div class = "product" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
                     <div class = "product-content">
                         <div class = "product-img">
                             <img src = "img/15_28aa6493-aead-4ac5-8a00-9b902f7ad9d2_328x.webp" alt = "product image">
@@ -262,7 +276,8 @@
                 </div>
                 <!-- end of single product -->
                 <!-- single product -->
-                <div class = "product">
+                <div class = "product" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
                     <div class = "product-content">
                         <div class = "product-img">
                             <img src = "img/5_d977c5b7-dc55-4089-83bc-6aca797ccb2d_328x.webp" alt = "product image">
@@ -295,7 +310,8 @@
                 </div>
                 <!-- end of single product -->
                 <!-- single product -->
-                <div class = "product">
+                <div class = "product" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
                     <div class = "product-content">
                         <div class = "product-img">
                             <img src = "img/12_603eb6ae-f943-4744-8373-45b0b69f41bd_328x.webp" alt = "product image">
@@ -328,7 +344,8 @@
                 </div>
                 <!-- end of single product -->
                 <!-- single product -->
-                <div class = "product">
+                <div class = "product" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
                     <div class = "product-content">
                         <div class = "product-img">
                             <img src = "img/1_fc0bf2e5-2697-4cda-8bbb-a17dd0fb5054_328x.webp" alt = "product image">
@@ -361,7 +378,8 @@
                 </div>
                 <!-- end of single product -->
                 <!-- single product -->
-                <div class = "product">
+                <div class = "product" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
                     <div class = "product-content">
                         <div class = "product-img">
                             <img src = "img/9_54ab0d39-0d50-4932-a634-0204480cf616_328x.webp" alt = "product image">
@@ -408,14 +426,24 @@
     <div class="container">
         <div class="row">
             <div class="footer-col">
-                <h4>Liquor Store</h4>
-                <p>123 Main Street</p>
-                <p>City, State</p>
-                <p>Phone: +9779837273823</p>
+                <summary>
+                    <h4>Liquor Store</h4>
+                <svg class="icon icon-caret" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 599.88 370.53"><path d="M585.53,105.22l-251,251a49,49,0,0,1-69.2,0l-251-251a49.05,49.05,0,0,1,0-69.3l21.6-21.6a49.07,49.07,0,0,1,69.3,0l160.2,160.2a49,49,0,0,0,69.2,0l160.2-160.2a49.05,49.05,0,0,1,69.3,0l21.6,21.6a49.25,49.25,0,0,1-.2,69.3Z"></path></svg>
+                </summary>
+                
+                <ul class="accordin-tabs">
+                    <li><p>123 Main Street</p></li>
+                <li><p>City, State</p></li>
+                <li><p>Phone: +14844731059</p></li>
+                </ul>
             </div>
             <div class="footer-col">
-                <h4>Get help</h4>
-                <ul>
+                <summary>
+                    <h4>Get help</h4>
+                    <svg class="icon icon-caret" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 599.88 370.53"><path d="M585.53,105.22l-251,251a49,49,0,0,1-69.2,0l-251-251a49.05,49.05,0,0,1,0-69.3l21.6-21.6a49.07,49.07,0,0,1,69.3,0l160.2,160.2a49,49,0,0,0,69.2,0l160.2-160.2a49.05,49.05,0,0,1,69.3,0l21.6,21.6a49.25,49.25,0,0,1-.2,69.3Z"></path></svg>
+                </summary>
+                
+                <ul class="accordin-tabs">
                     <li><a href="#">FQA</a></li>
                     <li><a href="#">shipping</a></li>
                     <li><a href="#">returns</a></li>
@@ -424,8 +452,12 @@
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
+                <summary>
+                    <h4>Quick Links</h4>
+                    <svg class="icon icon-caret" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 599.88 370.53"><path d="M585.53,105.22l-251,251a49,49,0,0,1-69.2,0l-251-251a49.05,49.05,0,0,1,0-69.3l21.6-21.6a49.07,49.07,0,0,1,69.3,0l160.2,160.2a49,49,0,0,0,69.2,0l160.2-160.2a49.05,49.05,0,0,1,69.3,0l21.6,21.6a49.25,49.25,0,0,1-.2,69.3Z"></path></svg>
+                </summary>
+                
+                <ul class="accordin-tabs">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
@@ -434,11 +466,19 @@
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Follow Us</h4>
+                <summary>
+                    <h4>Follow Us</h4>
+                    <svg class="icon icon-caret" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 599.88 370.53"><path d="M585.53,105.22l-251,251a49,49,0,0,1-69.2,0l-251-251a49.05,49.05,0,0,1,0-69.3l21.6-21.6a49.07,49.07,0,0,1,69.3,0l160.2,160.2a49,49,0,0,0,69.2,0l160.2-160.2a49.05,49.05,0,0,1,69.3,0l21.6,21.6a49.25,49.25,0,0,1-.2,69.3Z"></path></svg>
+                </summary>
+                
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="accordin-tabs">
+                        <ul style="display: flex;">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -455,5 +495,8 @@
 
 </footer>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

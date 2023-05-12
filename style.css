@@ -118,7 +118,7 @@ nav .links a {
   margin-right: 1.8rem;
   text-transform: none;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.8px;
   position: relative;
@@ -502,7 +502,7 @@ nav #close {
   display: block;
   text-decoration: none;
   font-size: 2rem;
-  font-family: "Alus";
+  font-family: "Asul";
   font-weight: 100;
   /* text-transform: uppercase; */
 }
@@ -671,6 +671,7 @@ table td {
 .footer ul {
   list-style: none;
 }
+
 .footer {
   padding: 3em 0 0 0;
   background: var(--gray);
@@ -680,46 +681,41 @@ table td {
   padding: 0 15px;
 }
 .footer .footer-col h4 {
-  font-size: 1.8rem;
-  color: var(--black);
+  font-size: 2.6rem;
+  color: #222222;
   text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
+  margin-bottom: 25px;
+  font-family: "Asul";
+  font-weight: 600;
   position: relative;
 }
-.footer-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: var(--bg);
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
+
 .footer-col p {
-  font-size: 1.4rem;
-  color: var(--black);
+  font-size: 1.8rem;
+  color: #666;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: capitalize;
   display: block;
   transition: all 0.3s ease;
   margin-bottom: 10px;
 }
-.footer-col p:hover {
+.footer-col:hover {
+  cursor: pointer;
+}
+/* .footer-col p:hover {
   color: var(--font-heading);
   padding-left: 8px;
-}
+} */
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
 .footer-col ul li a {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-transform: capitalize;
   /* color: #ffffff; */
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--black);
   display: block;
   transition: all 0.3s ease;
@@ -820,6 +816,7 @@ nav {
     transition: 0.5s;
     background: var(--white);
   }
+
   nav .links a {
     display: block;
     padding: 1.5rem;
@@ -864,7 +861,20 @@ nav {
   }
   .footer-col {
     width: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .icon {
+    display: block !important;
+  }
+  .footer .footer-col {
+    width: 100%;
+  }
+
+  .footer .container .row {
+    flex-direction: column;
+  }
+  .footer-col h4::before {
+    width: 100%;
   }
 }
 
@@ -872,6 +882,10 @@ nav {
   html {
     font-size: 40%;
   }
+  /* .footer-col {
+    margin-bottom: 10px;
+    width: 100%;
+  } */
 }
 
 /* Media Queries */
@@ -958,4 +972,20 @@ nav {
   /* font-family: "OpenSans"; */
   padding: 0 3rem 0 0;
   color: #666;
+}
+
+.icon-caret {
+  display: none;
+  width: 13px;
+  height: 13px;
+  margin-top: 5px;
+  fill: var(--color-base-accent-1);
+}
+
+.footer-col summary {
+  display: flex;
+  position: relative;
+  line-height: 1;
+  padding: 0.9rem 0;
+  justify-content: space-between;
 }
